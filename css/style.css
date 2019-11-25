@@ -412,7 +412,7 @@ li > a:only-child:after {
 /*--/banner --*/
 
 .main-banner {
-    background: url(../images/front.jpg)no-repeat center;
+    background: url(../images/first.png)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -423,7 +423,7 @@ li > a:only-child:after {
 }
 
 .main-banner.inner {
-    background: url(../images/front.jpg)no-repeat center;
+    background: url(../images/first.png)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -463,12 +463,12 @@ li > a:only-child:after {
 .banner-info h3 {
     font-size: 4em;
     letter-spacing: 2px;
-    color: #fff;
+    color: #000000;
     text-transform: capitalize;
 }
 
 .banner-info p {
-    color: rgba(255, 255, 255, 0.71);
+    color: #000000;
     font-size: 1em;
     letter-spacing: 2px;
     font-weight: 400;
@@ -505,7 +505,7 @@ li > a:only-child:after {
 
 a.btn.active {
     background: none;
-    color: #fff;
+    color: #000000;
     border: 2px solid #ddd;
 }
 
