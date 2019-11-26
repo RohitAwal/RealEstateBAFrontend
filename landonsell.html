@@ -38,7 +38,7 @@
 <!-- //font-awesome-icons -->
 <link href="css1/style.css" rel='stylesheet' type='text/css' />
 <!--fonts--> 
-<link href="//fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<!-- <link href="//fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
 <!--//fonts--> 
 
 </head>
@@ -118,68 +118,90 @@
         <h1> Travel Booking</h1>
             <div class="bg-agile">
             <div class="book-appointment">
-            <h2>Travel Booking Portal</h2>
+            <h2>Advertisement Portal</h2>
                                 <div class="book-form agileits-login">
-                                    <form id="reserveForm" method="POST" enctype="multipart/form-data">
+                                    <form id="advertForm" method="POST" enctype="multipart/form-data">
                                         <div class="phone_email">
-                                            <label>Full name : </label>
+                                            <label>I have : </label>
                                             <div class="form-text">
                                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                                <input type="text" id="fullname" name="Name" placeholder="" required="">
+                                                <input type="text" id="I_have" name="have" placeholder="" required="">
+                                            </div> 
+                                        </div>
+                                        <div class="phone_email">
+                                            <label>I want : </label>
+                                            <div class="form-text">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <input type="text" id="I_want" name="want" placeholder="" required="">
+                                            </div> 
+                                        </div>
+                                        <div class="phone_email">
+                                            <label>Name : </label>
+                                            <div class="form-text">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <input type="text" id="Name" name="Name" placeholder="" required="">
                                             </div> 
                                         </div>
                                         <div class="phone_email phone_email1">
                                             <label>Email : </label>
                                             <div class="form-text">
                                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                <input type="email" id="email" name="email" placeholder="" required="">
+                                                <input type="email" id="Email" name="email" placeholder="" required="">
                                             </div>
                                         </div>
                                         <div class="phone_email">
                                             <label>Phone number : </label>
                                             <div class="form-text">
                                                 <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <input type="text" id="phoneno" name="Phone no" placeholder="" required="">
+                                                <input type="text" id="Phoneno" name="Phone no" placeholder="" required="">
                                             </div> 
                                         </div> 
                                         <div class="phone_email phone_email1">
-                                            <label>Address : </label>
+                                            <label>Adtitle : </label>
                                             <div class="form-text">
                                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                <input type="text" id="address" name="address" placeholder="" required="">
+                                                <input type="text" id="Adtitle" name="Adtitle" placeholder="" required="">
                                             </div> 
                                         </div> 
                                         <div class="clear"></div>
                                         <div class="agileits_reservation_grid">
                                             <div class="span1_of_1">
-                                                <label>Departure Time : </label> 
+                                                <label>Description : </label> 
                                                 <div class="book_date"> 
                                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                <input type="text" id="departure" name="departure" placeholder="" required="">
+                                                <input type="text" id="Description" name="Description" placeholder="" required="">
         
                                                 </div>					
                                             </div>
                                             <div class="span1_of_2">
-                                                <label>Destination : </label> 
+                                                <label>Location : </label> 
                                                 <div class="book_date"> 
                                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                <input type="text" id="destination" name="destination" placeholder="" required="">
+                                                <input type="text" id="Location" name="Location" placeholder="" required="">
+        
+                                                </div>					
+                                            </div>
+                                            <div class="span1_of_2">
+                                                <label>LandArea : </label> 
+                                                <div class="book_date"> 
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                <input type="text" id="LandArea" name="LandArea" placeholder="" required="">
         
                                                 </div>					
                                             </div>
                                             <div class="clear"></div>
                                             <div class="span1_of_1">
-                                                <label>No.of people : </label>
+                                                <label>Price : </label>
                                                 <!-- start_section_room -->
                                                 <div class="section_room">
                                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                                    <input type="text" id="people" name="people" placeholder="" required="">
+                                                    <input type="text" id="Price" name="Price" placeholder="" required="">
                                                 </div>	
                                             </div>
                                          								
                                             <div class="clear"></div>
                                         </div> 
-                                        <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Reservation</button>              
+                                        <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Sent</button>              
                                        
                                     </form>
                                 </div>
@@ -271,8 +293,9 @@
 
 <script type="text/javascript" src="resources/js/bootstrap.js"></script>
 
-<script type="text/javascript" src="resources/js/booking.js"></script>
-<script type="text/javascript" src="resources/js/reserve.js"></script>
+
+<script type="text/javascript" src="resources/js/admindashboard.js"></script>
+<script type="text/javascript" src="resources/js/advert.js"></script>
 
 </body>
 

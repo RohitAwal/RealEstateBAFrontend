@@ -213,7 +213,7 @@
 
 
 
-<!-- Modal2 -->
+Modal2
 <div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -389,6 +389,129 @@
 
 
 
+<!-- Modal4
+<div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"></div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+ <form  class="form-horizontal" id="advevet"  method= "POST"  enctype="multipart/form-data">
+<fieldset>
+
+<legend>Edit Portal</legend>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">I Have</label>  
+  <div class="col-md-4">
+  <input id="I_have" name="Have" type="text" placeholder="Have" class="form-control input-md">
+  
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">I want</label>  
+  <div class="col-md-4">
+  <input id="I_want" name="want" type="text" placeholder="want" class="form-control input-md">
+  
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name</label>  
+  <div class="col-md-4">
+  <input id="Name" name="name" type="text" placeholder="name" class="form-control input-md">
+  
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Email</label>  
+  <div class="col-md-4">
+  <input id="Email" name="email" type="text" placeholder="email" class="form-control input-md">
+ 
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Phoneno</label>  
+  <div class="col-md-4">
+  <input id="Phoneno" name="phoneno" type="text" placeholder="phoneno" class="form-control input-md">
+  
+  </div>
+</div>
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Adtitle</label>  
+  <div class="col-md-4">
+  <input id="Adtitle" name="Adtitle" type="text" placeholder="Adtitle" class="form-control input-md">
+ 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Description</label>  
+  <div class="col-md-4">
+  <input id="Description" name="Description" type="text" placeholder="Description" class="form-control input-md">
+ 
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Location</label>  
+  <div class="col-md-4">
+  <input id="Location" name="Location" type="text" placeholder="Location" class="form-control input-md">
+ 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">LandArea</label>  
+  <div class="col-md-4">
+  <input id="LandArea" name="LandArea" type="text" placeholder="LandArea" class="form-control input-md">
+  
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Price</label>  
+  <div class="col-md-4">
+  <input id="Price" name="Price" type="text" placeholder="Price" class="form-control input-md">
+ 
+  </div>
+</div>
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit">submit</label>
+  <div class="col-md-4">
+    <button id="advevet" name="submit"  class="btn btn-info">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+ -->        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+
 
 
 
@@ -474,6 +597,35 @@
     </tr>
   </thead>
   <tbody id="reservelist">
+    <tr>
+      
+      
+      
+    </tr>
+   
+  </tbody>
+</table>
+
+<h1> Advertisement</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">I_have</th>
+      <th scope="col">I_want</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phoneno</th>
+      <th scope="col">Adtitle</th>
+      <th scope="col">Description</th>
+      <th scope="col">Location</th>
+      <th scope="col">LandArea</th>
+      <th scope="col">Price</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete </th>
+    </tr>
+  </thead>
+  <tbody id="advertlist">
     <tr>
       
       
@@ -649,6 +801,7 @@
 <script type="text/javascript" src="resources/js/booking.js"></script>
 <script type="text/javascript" src="resources/js/contact.js"></script>
 <script type="text/javascript" src="resources/js/reserve.js"></script>
+<script type="text/javascript" src="resources/js/advert.js"></script>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
