@@ -101,7 +101,7 @@
        
     
 
-  <h1> User Profile</h1>
+  <h1> Real Estate Client Profile</h1>
 <table class="table">
   <thead>
     <tr>
@@ -213,7 +213,7 @@
 
 
 
-Modal2
+<!-- Modal2 -->
 <div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -338,7 +338,7 @@ Modal2
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Departure</label>  
+  <label class="col-md-4 control-label" for="textinput">Name of the House</label>  
   <div class="col-md-4">
   <input id="departure" name="departure" type="text" placeholder="departure" class="form-control input-md">
  
@@ -347,7 +347,7 @@ Modal2
 
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Destination</label>  
+  <label class="col-md-4 control-label" for="textinput">Price</label>  
   <div class="col-md-4">
   <input id="destination" name="destination" type="text" placeholder="destination" class="form-control input-md">
  
@@ -356,7 +356,7 @@ Modal2
 
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">People</label>  
+  <label class="col-md-4 control-label" for="textinput">Description</label>  
   <div class="col-md-4">
   <input id="people" name="people" type="text" placeholder="people" class="form-control input-md">
  
@@ -389,7 +389,135 @@ Modal2
 
 
 
-<!-- Modal4
+
+
+
+
+
+
+
+<!-- <div class="market-status-table mt-4">
+    <div class="table-responsive">
+        <table class="dbkit-table">
+            <tr class="heading-td">
+                <td class="mv-icon">id</td>
+                <td class="coin-name">Name</td>
+                <td class="buy">email</td>
+                <td class="sell">Phone</td>
+                <td class="trends">Message</td>
+                <td class="attachments">Edit </td>
+                <td class="stats-chart">Delete</td>
+            </tr>
+         
+    <td class="mv-icon" id="contactlist">
+
+    <tr></tr>
+      
+      <td>Mark</td>
+      <td>oota</td>
+      <td>gotta</td>
+      <td>tota</td>
+      
+      <td><button type="button" id ="edit" class="btn btn-primary">Edit</button></td>
+       <td><button type="button" class="btn btn-danger">Delete</button></td>
+    </td>
+
+  </tr>
+
+    </table>
+    </div>
+</div> -->
+   
+
+
+
+
+ 
+
+
+<h1> Mail For Rent and Lease</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">email</th>
+      <th scope="col">Phoneno</th>
+      <th scope="col">Message</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete </th>
+    </tr>
+  </thead>
+  <tbody id="contactlist">
+    <tr>
+      
+    </tr>
+   
+  </tbody>
+</table> 
+
+
+  
+
+
+<h1> Reservation of Selective Real Estate</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Fullname</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phoneno</th>
+      <th scope="col">Adddress</th>
+      <th scope="col">Name of the House</th>
+      <th scope="col">Price</th>
+      <th scope="col">House ID</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete </th>
+    </tr>
+  </thead>
+  <tbody id="reservelist">
+    <tr>
+      
+      
+      
+    </tr>
+   
+  </tbody>
+</table>
+
+<h1> Client Requirement</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">I_have</th>
+      <th scope="col">I_want</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phoneno</th>
+      <th scope="col">Adtitle</th>
+      <th scope="col">Description</th>
+      <th scope="col">Location</th>
+      <th scope="col">LandArea</th>
+      <th scope="col">Price</th>
+    
+      <th scope="col">Delete </th>
+    </tr>
+  </thead>
+  <tbody id="advertlist">
+    <tr>
+      
+      
+      
+    </tr>
+   
+  </tbody>
+</table>
+
+
+
+<!-- Modal4 -->
 <div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content"></div>
@@ -401,10 +529,10 @@ Modal2
       </div>
       <div class="modal-body">
 
- <form  class="form-horizontal" id="advevet"  method= "POST"  enctype="multipart/form-data">
+ <form  class="form-horizontal" id="FormAdvert"  method= "POST"  enctype="multipart/form-data">
 <fieldset>
 
-<legend>Edit Portal</legend>
+<legend>Edit</legend>
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">I Have</label>  
   <div class="col-md-4">
@@ -492,7 +620,7 @@ Modal2
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit">submit</label>
   <div class="col-md-4">
-    <button id="advevet" name="submit"  class="btn btn-info">Submit</button>
+    <button id="FormAdvert" name="submit"  class="btn btn-info">Submit</button>
   </div>
 </div>
 
@@ -509,139 +637,15 @@ Modal2
     </div>
   </div>
 </div>
- -->
 
 
-
-
-
-
-<!-- <div class="market-status-table mt-4">
-    <div class="table-responsive">
-        <table class="dbkit-table">
-            <tr class="heading-td">
-                <td class="mv-icon">id</td>
-                <td class="coin-name">Name</td>
-                <td class="buy">email</td>
-                <td class="sell">Phone</td>
-                <td class="trends">Message</td>
-                <td class="attachments">Edit </td>
-                <td class="stats-chart">Delete</td>
-            </tr>
-         
-    <td class="mv-icon" id="contactlist">
-
-    <tr></tr>
-      
-      <td>Mark</td>
-      <td>oota</td>
-      <td>gotta</td>
-      <td>tota</td>
-      
-      <td><button type="button" id ="edit" class="btn btn-primary">Edit</button></td>
-       <td><button type="button" class="btn btn-danger">Delete</button></td>
-    </td>
-
-  </tr>
-
-    </table>
-    </div>
-</div> -->
-   
-
-
-
-
- 
-
-
-<h1> Suggestion</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Name</th>
-      <th scope="col">email</th>
-      <th scope="col">Phoneno</th>
-      <th scope="col">Message</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete </th>
-    </tr>
-  </thead>
-  <tbody id="contactlist">
-    <tr>
-      
-    </tr>
-   
-  </tbody>
-</table> 
-
-
-  
-
-
-<h1> Reservation</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Fullname</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phoneno</th>
-      <th scope="col">Adddress</th>
-      <th scope="col">Departure</th>
-      <th scope="col">Destination</th>
-      <th scope="col">No of People</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete </th>
-    </tr>
-  </thead>
-  <tbody id="reservelist">
-    <tr>
-      
-      
-      
-    </tr>
-   
-  </tbody>
-</table>
-
-<h1> Advertisement</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">I_have</th>
-      <th scope="col">I_want</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phoneno</th>
-      <th scope="col">Adtitle</th>
-      <th scope="col">Description</th>
-      <th scope="col">Location</th>
-      <th scope="col">LandArea</th>
-      <th scope="col">Price</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete </th>
-    </tr>
-  </thead>
-  <tbody id="advertlist">
-    <tr>
-      
-      
-      
-    </tr>
-   
-  </tbody>
-</table>
-
-<h1>Upload Images</h1>
+<h1>House on Sale Details</h1>
 <table class="table">
     <thead>
       <tr>
         <th scope="col">id</th>
         <th scope="col">Image</th>
-        <th scope="col">Name of the place</th>
+        <th scope="col">Location of House</th>
         <th scope="col">Price</th>
         <th scope="col">Description</th>
 

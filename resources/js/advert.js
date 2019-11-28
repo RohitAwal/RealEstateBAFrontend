@@ -1,87 +1,87 @@
 $(document).ready(
 	function () {
 
-	// 	var uid;
-	// $('#advevet').submit(function (e) {
+		var uid;
+	$('#FormAdvert').submit(function (e) {
 
 
-	// 	e.preventDefault();
+		e.preventDefault();
 
-	// 	var editDatacontact = {
+		var editDatacontact = {
         
-    //         I_have: $('#I_have').val(),
-    //         I_want: $('#I_want').val(),
-    //         Name: $('#Name').val(),
-    //         Email: $('#Email').val(),
-    //         Phoneno: $('#Phoneno').val(),
-    //         Adtitle: $('#Adtitle').val(),
-    //         Description: $('#Description').val(),
-    //         Location: $('#Location').val(),
-    //         LandArea: $('#LandArea').val(),
-    //         Price: $('#Price').val(),
+            I_have: $('#I_have').val(),
+            I_want: $('#I_want').val(),
+            Name: $('#Name').val(),
+            Email: $('#Email').val(),
+            Phoneno: $('#Phoneno').val(),
+            Adtitle: $('#Adtitle').val(),
+            Description: $('#Description').val(),
+            Location: $('#Location').val(),
+            LandArea: $('#LandArea').val(),
+            Price: $('#Price').val(),
 
         
-	// 	}
-	// 	console.log(editDatacontact);
-	// 	$.ajax({
+		}
+		console.log(editDatacontact);
+		$.ajax({
 
-	// 		url: 'http://localhost:3003/v1/advert/' + uid, // here uid has already been set to actual userid in previous funciton when edit is clicked, since uid is global
-	// 		method: "PUT",
-	// 		contentType: 'application/json',
-	// 		dataType: 'json',
-	// 		data: JSON.stringify(editDatacontact),
-	// 		success: function (result) {
-	// 			console.log(result)
-	// 			window.location.href = "admindashboard.html";
-	// 		},
-	// 		error: function () {
-	// 			window.location.href = "admindashboard.html";
-	// 		}
+			url: 'http://localhost:3003/v1/advert/' + uid, // here uid has already been set to actual userid in previous funciton when edit is clicked, since uid is global
+			method: "PUT",
+			contentType: 'application/json',
+			dataType: 'json',
+			data: JSON.stringify(editDatacontact),
+			success: function (result) {
+				console.log(result)
+				window.location.href = "admindashboard.html";
+			},
+			error: function () {
+				window.location.href = "admindashboard.html";
+			}
 
-	// 	})
+		})
 
-	// 	// khjgcvdwbq nshvg
+		// khjgcvdwbq nshvg
 
-	// })
+	})
 
 
 
 
 
 	
-	// $('#advertlist').on('click', '#edit', function () {
-	// 	//this is the userid 
-	// 	uid = $(this)[0].attributes.uid.nodeValue;
-	// 	//cid = $(this).attr('cid');
-	// 	// var uid = $(this).attr('uid');
-	// 	$.ajax({
+	$('#advertlist').on('click', '#edit', function () {
+		//this is the userid 
+		uid = $(this)[0].attributes.uid.nodeValue;
+		//cid = $(this).attr('cid');
+		// var uid = $(this).attr('uid');
+		$.ajax({
 
-	// 		url: 'http://localhost:3003/v1/advert/' + uid,
-	// 		method: 'GET',
-	// 		dataType: 'json',
-	// 		success: function (result) {
-	// 			// console.log(result.username)
-    //             $('#I_have').val(result.I_have)
-    //             $('#I_want').val(result.I_want)
-	// 			$('#Name').val(result.Name)
-	// 			$('#Email').val(result.Email)
-	// 			$('#Phoneno').val(result.Phoneno)
-	// 			$('#Adtitle').val(result.Adtitle)
-	// 			$('#Description').val(result.Description)
-    //             $('#Location').val(result.Location)
-    //             $('#LandArea').val(result.LandArea)
-	// 			$('#Price').val(result.Price)
+			url: 'http://localhost:3003/v1/advert/' + uid,
+			method: 'GET',
+			dataType: 'json',
+			success: function (result) {
+				// console.log(result.username)
+                $('#I_have').val(result.I_have)
+                $('#I_want').val(result.I_want)
+				$('#Name').val(result.Name)
+				$('#Email').val(result.Email)
+				$('#Phoneno').val(result.Phoneno)
+				$('#Adtitle').val(result.Adtitle)
+				$('#Description').val(result.Description)
+                $('#Location').val(result.Location)
+                $('#LandArea').val(result.LandArea)
+				$('#Price').val(result.Price)
 			
-	// 			// window.location.href = "admindashboard.html";
+				// window.location.href = "admindashboard.html";
 
-	// 		},
-	// 		error: function () {
+			},
+			error: function () {
 
-	// 		}
-	// 	})
+			}
+		})
 
 
-	// })
+	})
 
 	$('#advertlist').on('click', '#delete', function () {
 
@@ -150,8 +150,6 @@ $(document).ready(
                         <td>' + result[key].Location + '</td> \
                         <td>' + result[key].LandArea + '</td> \
                         <td>' + result[key].Price + '</td> \
-						<td><button type="button" uid="' + result[key].id + '" data-toggle="modal" data-target="#exampleModal1" \
-						id="edit"  class="btn btn-primary">Edit</button></td>\
 						<td><button type="button" uid="' + result[key].id + '"  id="delete" class="btn btn-danger">Delete</button></td>\
 						</tr>')
 				}
