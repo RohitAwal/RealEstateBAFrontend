@@ -48,6 +48,7 @@ $(document).ready(function () {
 		method: 'GET',
 		dataType: 'json',
 		// headers: { authorization: window.localStorage.getItem('token') },
+		// <td><button type="button" uid="' + result[key].id + '"  id="delete" class="btn btn-danger">Delete</button></td>\
 		success: function (result, status) {
 			console.log(result);
 
@@ -62,7 +63,6 @@ $(document).ready(function () {
 					<td>' + result[key].NameOfPlace + '</td> \
 					<td>' + result[key].Price + '</td> \
 					<td>' + result[key].Description + '</td> \
-						//<td><button type="button" uid="' + result[key].id + '"  id="delete" class="btn btn-danger">Delete</button></td>\
 					</tr>')
 			}
 		},
